@@ -1,0 +1,47 @@
+0xF0
+
+vendor1
+vendor2
+vendor3
+
+cmd
+   - DATA_BLOCK_ACK
+     0xF7
+     
+   - MAIN_PROGRAM
+     0xF7
+     
+   - START_BOOTLOADER
+     0xF7
+   
+   - WRITE_PATTERN
+     data (length = 35)
+     
+   - READ_PATTERN
+     patnum
+     0xF7
+     
+   - SWITCH_PATTERN
+     patnum
+     0xF7
+
+   - BOOT_DATA_BLOCK    X
+     length
+     addr1
+     addr2
+     addr3
+     addr4
+     data (length * 7 bits)
+     checksum
+     0xF7
+
+   - FIRMWARE_CHECKSUM  X
+     len1
+     len2
+     len3
+     checksum1
+     checksum2
+     0xF7
+   
+
+

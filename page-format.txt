@@ -1,0 +1,9 @@
+patch:
+
+config: 16 bytes
+	4 bytes
+
+patch:
+	8 bytes page format
+	8 * 32 bytes page
+	
